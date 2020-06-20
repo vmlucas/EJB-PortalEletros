@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar>
+    <display-name>EJBExtrato</display-name>
+    <enterprise-beans>
+    <session>
+      <description>Session Bean ( Stateless )</description>
+      <display-name>ExtratoEJB</display-name>
+      <ejb-name>ExtratoEJB</ejb-name>
+      <home>extrato.ExtratoEJBHome</home>
+      <remote>extrato.ExtratoEJB</remote>
+      <local-home>extrato.ExtratoEJBLocalHome</local-home>
+      <local>extrato.ExtratoEJBLocal</local>
+      <ejb-class>extrato.ExtratoEJBBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+    </session>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <container-transaction>
+      <method>
+        <ejb-name>ExtratoEJB</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+  </assembly-descriptor>
+</ejb-jar>

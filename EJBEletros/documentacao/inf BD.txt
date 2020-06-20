@@ -1,0 +1,52 @@
+EJB Eletros
+
+- EJB para acessar informações sobre Usuario, Participante e Fornecedor. Contem três EJBs:
+ParticipanteEJB
+UsuarioEJB
+FornecedorEJB
+
+
+COMPONENTES
+- IndiceEJB
+
+
+BIBLIOTECAS
+- eletros.jar
+
+
+USO SGBD ORACLE - BDConnection
+TABELAS:
+O_ELET.USU_ELET     - SELECT,INSERT,UPDATE
+O_ELET.ETD_ELET     - SELECT
+O_ELET.PF_ELET     - SELECT
+O_ELET.PTI_CAD     - SELECT   ...entre outras
+
+
+
+############################Tabela BD ########################
+DESCRICAO DE TABELA
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OWNER: O_ELET                 TABELA: USU_ELET          Comentário:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Null     Type
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+CD_USU_LOG                     NOT NULL CHAR(10)                                                                                                                                                                                      
+NM_USU_DIV                     NOT NULL CHAR(5)              Divisão do usuário EX: DVTI                                                                                                                                                                         
+CD_USU                         NOT NULL NUMBER(5)
+NM_USU_CML                     NOT NULL VARCHAR2(45)
+NM_USU_GER                              CHAR(10)
+DE_USU_SNH                              CHAR(32)
+DE_USU_CEN                              VARCHAR2(50)
+CD_USU_RED                              VARCHAR2(30)
+NM_USU_ARE                              CHAR(5)                     Area do usuário EX: SDA
+CD_USU_MAT                              CHAR(5)
+FL_USU_ATI                     NOT NULL CHAR(1)
+DT_USU_NAS                              DATE                                                                                                                                                                                          
+NU_USU_RAM                              VARCHAR2(30)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+

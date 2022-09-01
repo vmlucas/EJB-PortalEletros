@@ -1,0 +1,27 @@
+EJB EMPRESTIMOS
+Session Bean para buscar informações sobre emprestimos, para concessão de 
+empréstimos e extratos de emprestimos.
+              
+ejb-jar.xml
+configura os Sessions Beans.
+
+BIBLIOTECAS EXTRAS
+eletros.jar
+
+
+USO SGBD ORACLE - Connectionn Pool ( java:/jdbc/OracleCompEmprestimo )
+TABELAS:
+CNO_EPT          - SELECT
+VCL_EPT          - SELECT 
+MOD_EPT          - SELECT
+HIS_IND          - SELECT
+IND_IND          - SELECT
+his_ept_mod      - SELECT
+ENC_EPT          - SELECT
+ICD_EPT_ENC      - SELECT
+
+
+PACKAGES:
+O_EPT.PKG_EPT.prcalculaslddvr
+O_EPT.PKG_IOF.PR_CALCULAIOF
+              
